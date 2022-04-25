@@ -1,0 +1,12 @@
+.math-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 15px 20px;
+  background-color: aliceblue;
+  font-size: 20px;
+}
