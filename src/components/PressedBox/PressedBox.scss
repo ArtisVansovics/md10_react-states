@@ -1,0 +1,18 @@
+.pressed-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.pressed-box__text-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.pressed-box__text {
+  font-size: 20px;
+}

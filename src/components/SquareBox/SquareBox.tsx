@@ -16,7 +16,7 @@ const SquareBox = () => {
       />
       <div
         className="square-box__square"
-        style={{ backgroundColor: squareColors[color % 5] }}
+        style={{ backgroundColor: squareColors[color % squareColors.length] }}
       />
     </div>
   );

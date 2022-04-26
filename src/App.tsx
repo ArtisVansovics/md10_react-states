@@ -4,6 +4,7 @@ import MathBoxFirst from './components/MathBoxFirst/MathBoxFirst';
 import MathBoxSecond from './components/MathBoxSecond/MathBoxSecond';
 import PizzaBox from './components/PizzaBox/PizzaBox';
 import SquareBox from './components/SquareBox/SquareBox';
+import PressedBox from './components/PressedBox/PressedBox';
 
 const App = () => (
   <div className="container">
@@ -39,7 +40,9 @@ const App = () => (
         </div>
       </div>
       <div className="col-xs-6">
-        <div className="box" />
+        <div className="box">
+          <PressedBox />
+        </div>
       </div>
     </div>
   </div>
