@@ -1,0 +1,14 @@
+.square-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.square-box__square {
+  width: 150px;
+  height: 150px;
+  background-color: beige;
+}

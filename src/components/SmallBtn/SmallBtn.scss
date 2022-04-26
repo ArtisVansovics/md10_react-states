@@ -8,6 +8,7 @@
   border: 1px solid black;
   min-width: 45px;
   transition: outline-color 0.4s, border-color 0.4s;
+  user-select: none;
 
   &:hover {
     outline: 2px solid goldenrod;
