@@ -5,6 +5,7 @@ import MathBoxSecond from './components/MathBoxSecond/MathBoxSecond';
 import PizzaBox from './components/PizzaBox/PizzaBox';
 import SquareBox from './components/SquareBox/SquareBox';
 import PressedBox from './components/PressedBox/PressedBox';
+import InputBox from './components/InputBox/InputBox';
 
 const App = () => (
   <div className="container">
@@ -42,6 +43,13 @@ const App = () => (
       <div className="col-xs-6">
         <div className="box">
           <PressedBox />
+        </div>
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-xs-12">
+        <div className="box">
+          <InputBox />
         </div>
       </div>
     </div>
