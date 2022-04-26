@@ -6,6 +6,7 @@ import PizzaBox from './components/PizzaBox/PizzaBox';
 import SquareBox from './components/SquareBox/SquareBox';
 import PressedBox from './components/PressedBox/PressedBox';
 import InputBox from './components/InputBox/InputBox';
+import NumberBox from './components/NumberBox/NumberBox';
 
 const App = () => (
   <div className="container">
@@ -40,16 +41,26 @@ const App = () => (
           <SquareBox />
         </div>
       </div>
+      {/* Change text to "Pressed" */}
       <div className="col-xs-6">
         <div className="box">
           <PressedBox />
         </div>
       </div>
     </div>
+    {/* Show input */}
     <div className="row">
       <div className="col-xs-12">
         <div className="box">
           <InputBox />
+        </div>
+      </div>
+    </div>
+    {/* Change array */}
+    <div className="row">
+      <div className="col-xs-12">
+        <div className="box">
+          <NumberBox />
         </div>
       </div>
     </div>
