@@ -7,6 +7,7 @@ import SquareBox from './components/SquareBox/SquareBox';
 import PressedBox from './components/PressedBox/PressedBox';
 import InputBox from './components/InputBox/InputBox';
 import NumberBox from './components/NumberBox/NumberBox';
+import Card from './components/Card/Card';
 
 const App = () => (
   <div className="container">
@@ -61,6 +62,13 @@ const App = () => (
       <div className="col-xs-12">
         <div className="box">
           <NumberBox />
+        </div>
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-xs-12">
+        <div className="box">
+          <Card idCard={1} title="First card" />
         </div>
       </div>
     </div>

@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  gap: 16px;
+  font-size: 18px;
+  background-color: beige;
+  border: 2px solid rebeccapurple;
+  border-radius: 10px;
+  padding: 20px 50px 50px 20px;
+}
+
+.card--hidden {
+  display: none;
+}
+
+.card__btn {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: orangered;
+
+  &:hover {
+    color: darkred;
+  }
+}
+
+.card__icon-btn {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
