@@ -65,6 +65,7 @@ const App = () => (
         </div>
       </div>
     </div>
+    {/* Change cards */}
     <div className="row">
       <div className="col-xs-12">
         <div className="box">

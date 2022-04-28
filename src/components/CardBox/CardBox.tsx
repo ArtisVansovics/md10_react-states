@@ -8,32 +8,32 @@ const CardBox = () => {
     {
       idCard: 1,
       title: 'First card',
-      key: 'card_01',
+      cardKey: 'card_01',
     },
     {
       idCard: 2,
       title: 'Second card',
-      key: 'card_02',
+      cardKey: 'card_02',
     },
     {
       idCard: 3,
       title: 'Third card',
-      key: 'card_03',
+      cardKey: 'card_03',
     },
     {
       idCard: 4,
       title: 'Fourth card',
-      key: 'card_04',
+      cardKey: 'card_04',
     },
     {
       idCard: 5,
       title: 'Fifth card',
-      key: 'card_05',
+      cardKey: 'card_05',
     },
     {
       idCard: 6,
       title: 'Sixth card',
-      key: 'card_06',
+      cardKey: 'card_06',
     },
   ];
   const [cards, setCards] = useState([...initialCards]);
@@ -54,10 +54,10 @@ const CardBox = () => {
       title: 'Make all titles UPPERCASE',
       onClick: () => {
         setCards([...cards.map(({
-          idCard, title, key,
+          idCard, title, cardKey,
         }) => (
           {
-            idCard, key, title: title.toUpperCase(),
+            idCard, cardKey, title: title.toUpperCase(),
           }
         ))]);
       },
@@ -68,14 +68,14 @@ const CardBox = () => {
     <div className="card-box">
       <div className="card-box__row">
         {buttonsCards.map(({ title, onClick }) => (
-          <BlueBtn title={title} onClick={onClick} />
+          <BlueBtn key={title} title={title} onClick={onClick} />
         ))}
       </div>
       <div className="card-box__row">
         {[...cards.map(({
-          idCard, title, key,
+          idCard, title, cardKey,
         }) => (
-          <Card key={key} idCard={idCard} title={title} allCards={cards} removeCard={setCards} />
+          <Card key={cardKey} idCard={idCard} title={title} allCards={cards} removeCard={setCards} cardKey={cardKey} />
         ))]}
       </div>
     </div>

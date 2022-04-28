@@ -4,15 +4,15 @@ import './Card.scss';
 type CardProps = {
   idCard: number
   title: string
-  key: string
-  allCards: {idCard: number, title: string, key: string}[]
-  removeCard: React.Dispatch<React.SetStateAction<{idCard: number, title: string, key: string}[]>>
+  cardKey: string
+  allCards: {idCard: number, title: string, cardKey: string}[]
+  removeCard: React.Dispatch<React.SetStateAction<{idCard: number, title: string, cardKey: string}[]>>
 }
 
 const Card:FC<CardProps> = ({
-  title, idCard, key, allCards, removeCard,
+  title, idCard, cardKey, allCards, removeCard,
 }) => (
-  <div className="card" key={key}>
+  <div className="card" key={cardKey}>
     <p className="card__id">
       {`ID: ${idCard}`}
     </p>

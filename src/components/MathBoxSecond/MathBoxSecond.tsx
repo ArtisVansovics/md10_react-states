@@ -41,7 +41,7 @@ const MathBoxSecond = () => {
   return (
     <MathBox>
       {buttonsSecond.map(({ title, onClick }) => (
-        <SmallBtn title={title} onClick={onClick} />
+        <SmallBtn key={title} title={title} onClick={onClick} />
       ))}
       <p>
         {count}

@@ -58,12 +58,12 @@ const NumberBox = () => {
     <div className="number-box">
       <div className="number-box__row">
         {buttonsNumb.map(({ title, onClick }) => (
-          <BlueBtn title={title} onClick={onClick} />
+          <BlueBtn key={title} title={title} onClick={onClick} />
         ))}
       </div>
       <div className="number-box__row">
         {numbers.map((number) => (
-          <div className="number-box__card">
+          <div key={number} className="number-box__card">
             {number}
           </div>
         ))}
