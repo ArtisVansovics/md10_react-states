@@ -3,39 +3,40 @@ import './CardBox.scss';
 import BlueBtn from '../BlueBtn/BlueBtn';
 import Card from '../Card/Card';
 
+const initialCards = [
+  {
+    idCard: 1,
+    title: 'First card',
+    cardKey: 'card_01',
+  },
+  {
+    idCard: 2,
+    title: 'Second card',
+    cardKey: 'card_02',
+  },
+  {
+    idCard: 3,
+    title: 'Third card',
+    cardKey: 'card_03',
+  },
+  {
+    idCard: 4,
+    title: 'Fourth card',
+    cardKey: 'card_04',
+  },
+  {
+    idCard: 5,
+    title: 'Fifth card',
+    cardKey: 'card_05',
+  },
+  {
+    idCard: 6,
+    title: 'Sixth card',
+    cardKey: 'card_06',
+  },
+];
+
 const CardBox = () => {
-  const initialCards = [
-    {
-      idCard: 1,
-      title: 'First card',
-      cardKey: 'card_01',
-    },
-    {
-      idCard: 2,
-      title: 'Second card',
-      cardKey: 'card_02',
-    },
-    {
-      idCard: 3,
-      title: 'Third card',
-      cardKey: 'card_03',
-    },
-    {
-      idCard: 4,
-      title: 'Fourth card',
-      cardKey: 'card_04',
-    },
-    {
-      idCard: 5,
-      title: 'Fifth card',
-      cardKey: 'card_05',
-    },
-    {
-      idCard: 6,
-      title: 'Sixth card',
-      cardKey: 'card_06',
-    },
-  ];
   const [cards, setCards] = useState([...initialCards]);
   const buttonsCards = [
     {

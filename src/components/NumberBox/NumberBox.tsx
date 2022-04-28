@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './NumberBox.scss';
 import BlueBtn from '../BlueBtn/BlueBtn';
 
+const numberArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 const NumberBox = () => {
-  const numberArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const [numbers, setNumbers] = useState([...numberArr]);
   const buttonsNumb = [
     {
