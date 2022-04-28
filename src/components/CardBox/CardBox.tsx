@@ -54,13 +54,9 @@ const CardBox = () => {
     {
       title: 'Make all titles UPPERCASE',
       onClick: () => {
-        setCards([...cards.map(({
-          idCard, title, cardKey,
-        }) => (
-          {
-            idCard, cardKey, title: title.toUpperCase(),
-          }
-        ))]);
+        setCards(cards.map((card) => (
+          { ...card, title: card.title.toUpperCase() }
+        )));
       },
     },
   ];
@@ -73,7 +69,7 @@ const CardBox = () => {
         ))}
       </div>
       <div className="card-box__row">
-        {[...cards.map(({
+        {[cards.map(({
           idCard, title, cardKey,
         }) => (
           <Card key={cardKey} idCard={idCard} title={title} allCards={cards} removeCard={setCards} cardKey={cardKey} />

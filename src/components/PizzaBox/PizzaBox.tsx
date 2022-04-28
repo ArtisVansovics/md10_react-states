@@ -8,7 +8,7 @@ const PizzaBox = () => {
   return (
     <div className="pizza-box">
       <BlueBtn
-        title="Add 'pizza'"
+        title='Add "pizza"'
         onClick={() => {
           setPizza(pizza + 1);
         }}

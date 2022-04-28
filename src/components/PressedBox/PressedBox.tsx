@@ -8,7 +8,7 @@ const PressedBox = () => {
   return (
     <div className="pressed-box">
       <BlueBtn
-        title="Change text to 'Pressed'"
+        title='Change text to "Pressed"'
         onClick={() => {
           setPress(press + 1);
         }}
